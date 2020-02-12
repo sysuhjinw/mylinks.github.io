@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.quwan.tt",
+    "sha256_cert_fingerprints":
+    ["C5:2F:13:8C:96:DF:19:E0:E2:4D:B7:08:7F:95:3B:D5:7C:61:AE:96:2A:15:1D:71:28:E3:52:BA:6A:CA:E0:ED"]
+  }
+}]
