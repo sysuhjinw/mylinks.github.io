@@ -1,1 +1,20 @@
-Hello World!
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>MyLinks</h1>
+        <form>
+            <input type="text">
+            <input type="button" value="submit" onclick="test()">
+            <a href="intent://sysuhjinw.github.io/mylinks/fromGithub#Intent;scheme=https;package=com.quwan.tt;end">唤起App</a>
+        </form>
+    </body>
+    <script>
+        function createIntentUrl(content) {
+          return return 'intent://sysuhjinw.github.io/mylinks/' + content + '#Intent;scheme=https;package=com.quwan.tt;end';
+        }
+
+    </script>
+</html>
