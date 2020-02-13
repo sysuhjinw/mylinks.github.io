@@ -5,16 +5,14 @@
     </head>
     <body>
         <h1>MyLinks</h1>
-        <form>
-            <input type="text">
-            <input type="button" value="submit" onclick="test()">
-            <a href="intent://sysuhjinw.github.io/mylinks/fromGithub#Intent;scheme=https;package=com.quwan.tt;end">唤起App</a>
-        </form>
+        <h2><input type="text" id="content"></h2>
+        <h2><input type="button" value="唤起App" onclick="callIntentUrl()"></h2>
     </body>
-    <script>
-        function createIntentUrl(content) {
-          return return 'intent://sysuhjinw.github.io/mylinks/' + content + '#Intent;scheme=https;package=com.quwan.tt;end';
+    <script type="text/javascript">
+        function callIntentUrl() {
+          var content = document.getElementById("content").value;
+          var url = 'intent://sysuhjinw.github.io/mylinks/' + content + '#Intent;scheme=https;package=com.quwan.tt;end';
+          window.location.href = url
         }
-
     </script>
 </html>
